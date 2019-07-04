@@ -21,7 +21,7 @@ CongChat.prototype={
 			img2.src="./images/亚索2.png";
 			img3.src="./images/timg.jpg";
 		loginArea.classList.add('login-area-appear');
-		this.socket=io.connect('http://localhost:8833/');
+		this.socket=io.connect('http://169.254.35.97:3000/');
 		this.socket.on('connect',function(){		
 			infoMessage.classList.remove('error');
 			infoMessage.classList.add('success');
